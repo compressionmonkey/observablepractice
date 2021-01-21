@@ -1,10 +1,10 @@
-import { Component, AfterViewInit } from '@angular/core';
+// here is html code
+// <div>
+//   <input type="text" id="yourname" placeholder="Type your name here" />
+// </div>
+import { AfterViewInit } from '@angular/core';
 import { Observable } from 'rxjs'
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
+
 export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit(){
