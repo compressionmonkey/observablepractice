@@ -21,7 +21,8 @@ export class AppComponent implements AfterViewInit {
 
   fromEvent(target: HTMLInputElement, eventName: string){
     return new Observable((observer) => {
-      const handler = (e: unknown) => observer.next(e);
+      // try unknown or any
+      const handler = (e: any) => observer.next(e);
       target.addEventListener(eventName, handler);
 
       return () => {
